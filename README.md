@@ -63,4 +63,4 @@ Then, open your web browser and navigate to:
 5. **Output**: The frontend dynamically updates to showcase whether the headline is deemed "Fake" or "Reliable" along with a confidence percentage.
 
 ---
-*Developed as a showcase of transitioning from exploratory Data Science (Jupyter Notebooks) to Engineering production-ready Web Applications.*
+
