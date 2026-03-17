@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fake News Classifier</title>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/static/styles.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="background-shapes">
+        <div class="shape shape-1"></div>
+        <div class="shape shape-2"></div>
+        <div class="shape shape-3"></div>
+    </div>
+
+    <main class="container">
+        <header>
+            <h1><span class="highlight">Fake</span> News Classifier</h1>
+            <p class="subtitle">Powered by Deep Learning & LSTM Networks</p>
+        </header>
+
+        <section class="glass-panel">
+            <div class="input-group">
+                <label for="news-title">Enter News Title to Verify</label>
+                <textarea id="news-title" placeholder="e.g. 'Scientists discover a new planet made entirely of diamonds...'"></textarea>
+                <button id="analyze-btn">
+                    <span>Analyze Content</span>
+                    <i class="fas fa-search"></i>
+                </button>
+            </div>
+
+            <div id="loading" class="hidden">
+                <div class="spinner"></div>
+                <p>Analyzing linguistic patterns...</p>
+            </div>
+
+            <div id="result-container" class="hidden">
+                <div id="result-badge" class="badge"></div>
+                <div class="confidence-container">
+                    <p>Confidence Score</p>
+                    <div class="progress-bar">
+                        <div id="confidence-fill" class="progress-fill"></div>
+                    </div>
+                    <p id="confidence-text" class="confidence-text">0%</p>
+                </div>
+            </div>
+            
+            <div id="error-message" class="error-msg hidden"></div>
+        </section>
+    </main>
+    <script src="/static/script.js"></script>
+</body>
+</html>
